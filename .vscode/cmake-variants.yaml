@@ -1,0 +1,30 @@
+buildType:
+  default: debug
+  choices:
+    debug:
+      short: Debug
+      buildType: debug
+    release:
+      short: Release
+      buildType: release
+    flexspi_nor_debug:
+      short: FlexSPI Debug
+      buildType: flexspi_nor_debug
+    flexspi_nor_sdram_debug:
+      short: FlexSPI SDRAM Debug
+      buildType: flexspi_nor_sdram_debug
+    flexspi_nor_sdram_release:
+      short: FlexSPI SDRAM Release
+      buildType: flexspi_nor_sdram_release
+    sdram_debug:
+      short: SDRAM Debug
+      buildType: sdram_debug
+    sdram_release:
+      short: SDRAM Release
+      buildType: sdram_release
+    sdram_txt_debug:
+      short: SDRAM Code Debug
+      buildType: sdram_txt_debug
+    sdram_txt_release:
+      short: SDRAM Code Release
+      buildType: sdram_txt_release
