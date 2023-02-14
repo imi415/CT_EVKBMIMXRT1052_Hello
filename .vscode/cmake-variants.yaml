@@ -3,28 +3,41 @@ buildType:
   choices:
     debug:
       short: Debug
+      long: Debug build, code in ITCM, optimizations disabled
       buildType: debug
     release:
       short: Release
+      long: Release build, code in ITCM, symbols stripped, optimizations enabled
       buildType: release
     flexspi_nor_debug:
       short: FlexSPI Debug
+      long: Debug build, code in FlexSPI HyperFlash, optimizations disabled
       buildType: flexspi_nor_debug
+    flexspi_nor_release:
+      short: FlexSPI Release
+      long: Release build, code in FlexSPI HyperFlash, symbols stripped, optimizations enabled
+      buildType: flexspi_nor_release
     flexspi_nor_sdram_debug:
       short: FlexSPI SDRAM Debug
+      long: Debug build, code in FlexSPI HyperFlash, SDRAM initialized via DCD, optimizations disabled
       buildType: flexspi_nor_sdram_debug
     flexspi_nor_sdram_release:
       short: FlexSPI SDRAM Release
+      long: Release build, code in FlexSPI HyperFlash, SDRAM initialized via DCD, symbols stripped, optimizations enabled
       buildType: flexspi_nor_sdram_release
     sdram_debug:
       short: SDRAM Debug
+      long: Debug build, code in ITCM, SDRAM initialized by debugger, optimizations disabled
       buildType: sdram_debug
     sdram_release:
       short: SDRAM Release
+      long: Release build, code in ITCM, SDRAM initialized by debugger, symbols stripped, optimizations enabled
       buildType: sdram_release
     sdram_txt_debug:
       short: SDRAM Code Debug
+      long: Debug build, code in SDRAM, SDRAM initialized by debugger, optimizations disabled
       buildType: sdram_txt_debug
     sdram_txt_release:
       short: SDRAM Code Release
+      long: Release build, code in SDRAM, SDRAM initialized by debugger, symbols stripped, optimizations enabled
       buildType: sdram_txt_release
